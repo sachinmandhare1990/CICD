@@ -221,10 +221,11 @@ android {
             include (*reactNativeArchitectures())
         }
     }
-  /*  compileOptions {
+    compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }*/
+    }
+
     buildToolsVersion '30.0.3'
     buildTypes {
         debug {
