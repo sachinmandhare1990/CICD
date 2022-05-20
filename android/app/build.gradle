@@ -227,6 +227,7 @@ android {
     }
 
     buildToolsVersion '30.0.3'
+    namespace 'com.firstapp'
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
