@@ -132,13 +132,13 @@ def reactNativeArchitectures() {
 android {
     signingConfigs {
         debug {
-            storeFile file('F:\\React projects\\FirstApp\\kestore.jks')
+            storeFile file("/kestore.jks")
             storePassword '123456'
             keyAlias 'key0'
             keyPassword '123456'
         }
         release {
-            storeFile file('F:\\React projects\\FirstApp\\kestore.jks')
+            storeFile file("/kestore.jks")
             storePassword '123456'
             keyAlias 'key0'
             keyPassword '123456'
