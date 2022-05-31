@@ -236,6 +236,27 @@ android {
 
     buildToolsVersion '30.0.3'
     namespace 'com.firstapp'
+    flavorDimensions 'type'
+    productFlavors {
+        dev {
+            dimension 'type'
+            versionCode 2
+            versionName '1.1'
+            targetSdk targetSdkVersion
+            minSdk minSdkVersion
+            multiDexEnabled true
+            signingConfig signingConfigs.debug
+        }
+        prod {
+            dimension 'type'
+            versionCode 1
+            versionName '1.0'
+            targetSdk targetSdkVersion
+            minSdk minSdkVersion
+            multiDexEnabled true
+            signingConfig signingConfigs.debug
+        }
+    }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
